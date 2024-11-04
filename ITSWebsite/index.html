@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection and Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Course Quiz</h1>
+            <ul>
+                <li><a href="#course-selection">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-selection">
+            <h2>Select Your Course and Start Quiz</h2>
+            <select id="course-dropdown">
+                <option value="">Select a Course </option>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+            </select>
+            <button id="start-quiz">Start Quiz</button>
+        </section>
+
+        <section id="quiz" style="display:none;">
+            <h2>MCQ Test</h2>
+            <form id="quiz-form">
+                <div>
+                    <p>1. Question 1?</p>
+                    <input type="radio" name="q1" value="a"> a) Answer 1<br>
+                    <input type="radio" name="q1" value="b"> b) Answer 2<br>
+                    <input type="radio" name="q1" value="c"> c) Answer 3<br>
+                </div>
+                <div>
+                    <p>2. Question 2?</p>
+                    <input type="radio" name="q2" value="a"> a) Answer 1<br>
+                    <input type="radio" name="q2" value="b"> b) Answer 2<br>
+                    <input type="radio" name="q2" value="c"> c) Answer 3<br>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </section>
+
+        <section id="result" style="display:none;">
+            <h2>Your Result</h2>
+            <p id="result-message"></p>
+            <div id="video-suggestion"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Course Quiz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

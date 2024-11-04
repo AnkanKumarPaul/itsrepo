@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3; /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+header {
+    background: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 28px; /* Slightly larger title */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0; /* Adjust margin for spacing */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Bold links */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1; /* Allow main to grow and take available space */
+    padding: 20px;
+    width: 600px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+}
+
+/* Existing styles for header and button */
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    text-align: center; /* Center align the heading */
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}
+
+select{
+    margin-left: 38%;
+}
+/* Style the dropdown */
+#course-dropdown {
+    
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    background-color: white; /* White background */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    outline: none; /* Remove default outline */
+}
+
+#course-dropdown:focus {
+    border-color: #388E3C; /* Darker green on focus */
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5); /* Subtle shadow on focus */
+}
+
+/* Add some space around the dropdown */
+.course-selection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between dropdown and button */
+    margin-top: 10px; /* Space above the selection container */
+}
+
+/* Add hover effect for the dropdown */
+#course-dropdown:hover {
+    border-color: #66BB6A; /* Lighter green on hover */
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Larger padding */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Larger text */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: block;
+    margin-top: 15px; /* Increased margin above button */
+    margin-left: 42%;
+}
+
+button:hover {
+    background-color: #3ddd45; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0; /* Increased padding for footer */
+    background: #4CAF50;
+    color: white;
+    font-size: 14px; /* Smaller text */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+#course-selection, #quiz, #result {
+    margin-bottom: 30px; /* More space between sections */
+}
+
+form div {
+    margin-bottom: 20px; /* More space between questions */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio buttons and labels */
+}
+
+#video-suggestion iframe {
+    border-radius: 8px; /* Rounded corners for video */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for video */
+    margin-top: 15px; /* Space above video */
+}
